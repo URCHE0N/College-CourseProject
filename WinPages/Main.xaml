@@ -1,0 +1,43 @@
+﻿<Page x:Class="WinPages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WinPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="464" d:DesignWidth="640"
+      Title="Main">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Label Content="Разность арифметической прогрессии (R)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Content="Некая переменная (B)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="2" Content="Первую переменную массива C (C1)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="3" Content="Размерность для массива A (M)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Content="Диапазон для массива A от" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="4" Grid.Column="2" Content="до" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Grid.Row="5" Content="Шаг для расчета массива Y (H)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxR" MaxLength="6" ToolTip="Возможно число с плавающей точкой" PreviewTextInput="TextBoxR_PreviewTextInput"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxB" MaxLength="6" ToolTip="Возможно число с плавающей точкой" PreviewTextInput="TextBoxB_PreviewTextInput"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxC1" MaxLength="6" ToolTip="Возможно число с плавающей точкой" PreviewTextInput="TextBoxC1_PreviewTextInput"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxM" MaxLength="2" ToolTip="Целое число" PreviewTextInput="TextBoxM_PreviewTextInput"/>
+        <TextBox Grid.Column="1" Grid.Row="4" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxAStart" MaxLength="3" ToolTip="Целое число" PreviewTextInput="TextBoxAStart_PreviewTextInput"/>
+        <TextBox Grid.Column="3" Grid.Row="4" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxAEnd" MaxLength="3" ToolTip="Целое число" PreviewTextInput="TextBoxAEnd_PreviewTextInput"/>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5" Margin="20" VerticalContentAlignment="Center" x:Name="TextBoxH" MaxLength="4" ToolTip="Возможно число с плавающей точкой" PreviewTextInput="TextBoxH_PreviewTextInput"/>
+        <Separator Grid.Row="6" Grid.ColumnSpan="4" VerticalAlignment="Top" Margin="0"/>
+        <Button Grid.ColumnSpan="4" Grid.Row="6" Margin="10" x:Name="NextPage" Click="NextPage_Click" Content="Продолжить" HorizontalAlignment="Right" Width="150"/>
+    </Grid>
+</Page>

@@ -1,0 +1,17 @@
+﻿<Page x:Class="WinPages.Welcome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WinPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="464" d:DesignWidth="640"
+      Title="Welcome">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Label Content="Решение уравнения Лагранжа" HorizontalAlignment="Center" FontSize="28" Height="46" Width="400"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Закрыть программу" Margin="5" FontSize="18" Height="46" Width="190" x:Name="Close" Click="Close_Click" Foreground="Red"/>
+            <Button Content="Начать работу" Margin="5" FontSize="18" Height="46" Width="190" x:Name="NextPage" Click="NextPage_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
